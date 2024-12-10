@@ -18,7 +18,7 @@ enum class LvCoffeCategoryFilterChipEnum(
 
     companion object {
         fun fromDescription(description: String): LvCoffeCategoryFilterChipEnum? {
-            return values().find { it.description == description }
+            return entries.find { it.description == description }
         }
     }
 }

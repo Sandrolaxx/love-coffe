@@ -1,12 +1,12 @@
 package com.aktie.lovecoffe.ui.theme
 
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.darkColors
-import androidx.compose.material.lightColors
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.darkColorScheme
+import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
-private val LightColors = lightColors(
+private val LightColors = lightColorScheme(
     primary = GreenBase,
     onPrimary = Color.White,
     secondary = RedBase,
@@ -19,7 +19,7 @@ private val LightColors = lightColors(
     onError = Color.White
 )
 
-private val DarkColors = darkColors(
+private val DarkColors = darkColorScheme(
     primary = GreenLight,
     onPrimary = Color.Black,
     secondary = RedLight,
@@ -44,7 +44,7 @@ fun LoveCoffeTheme(
     }
 
     MaterialTheme(
-        colors = colors,
+        colorScheme = colors,
         typography = Typography,
         content = content
     )

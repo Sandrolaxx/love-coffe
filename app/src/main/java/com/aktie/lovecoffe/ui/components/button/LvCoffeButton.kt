@@ -3,10 +3,10 @@ package com.aktie.lovecoffe.ui.components
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.Button
-import androidx.compose.material.ButtonDefaults
-import androidx.compose.material.Icon
-import androidx.compose.material.Text
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.Icon
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -30,12 +30,12 @@ fun LvCoffeButton(
         shape = RoundedCornerShape(16.dp),
         contentPadding = if (text == null && iconRes != null) PaddingValues(0.dp) else ButtonDefaults.ContentPadding,
         colors = ButtonDefaults.buttonColors(
-            backgroundColor = GreenBase,
+            containerColor = GreenBase,
             contentColor = Gray100
         ),
         onClick = onClick
     ) {
-        Row(
+        Row (
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(8.dp)
         ) {
@@ -45,7 +45,7 @@ fun LvCoffeButton(
                     contentDescription = "Ícone do botão"
                 )
             }
-            text?.let { Text(text = text.uppercase(), style = Typography.subtitle1) }
+            text?.let { Text(text = text.uppercase(), style = Typography.labelMedium) }
         }
 
     }

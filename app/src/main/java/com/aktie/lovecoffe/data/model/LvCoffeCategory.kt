@@ -8,5 +8,5 @@ data class LvCoffeCategory(
 ) {
     @get:DrawableRes
     val icon: Int?
-    get() = LvCoffeCategoryFilterChipEnum.fromDescription(description = name)?.icon
+        get() = LvCoffeCategoryFilterChipEnum.fromDescription(description = name)?.icon
 }

@@ -1,6 +1,6 @@
 package com.aktie.lovecoffe.ui.theme
 
-import androidx.compose.material.Typography
+import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
@@ -18,56 +18,56 @@ val rubikFontFamily = FontFamily(
 private const val activatePreview = true
 
 val Typography = Typography(
-        // "Title XI" - headlineLarge
-        h1 = TextStyle(
+        // "Title XI"
+        headlineLarge = TextStyle(
                 fontFamily = if (activatePreview) FontFamily.Default else rubikFontFamily,
                 fontWeight = FontWeight.Bold,
                 fontSize = 24.sp
         ),
-        // "Title Lg" - headlineMedium
-        h2 = TextStyle(
+        // "Title Lg"
+        headlineMedium = TextStyle(
                 fontFamily = if (activatePreview) FontFamily.Default else rubikFontFamily,
                 fontWeight = FontWeight.Bold,
                 fontSize = 20.sp
         ),
-        // "Title Md" - headlineSmall
-        h3 = TextStyle(
+        // "Title Md"
+        headlineSmall = TextStyle(
                 fontFamily = if (activatePreview) FontFamily.Default else rubikFontFamily,
                 fontWeight = FontWeight.SemiBold,
                 fontSize = 16.sp
         ),
-        // "Text Sm" - titleLarge
-        caption = TextStyle(
+        // "Text Sm"
+        titleLarge = TextStyle(
                 fontFamily = if (activatePreview) FontFamily.Default else rubikFontFamily,
                 fontWeight = FontWeight.SemiBold,
                 fontSize = 14.sp
         ),
-        // "Text Md" - bodyLarge
-        body1 = TextStyle(
+        // "Text Md"
+        bodyLarge = TextStyle(
                 fontFamily = if (activatePreview) FontFamily.Default else rubikFontFamily,
                 fontWeight = FontWeight.Normal,
                 fontSize = 16.sp
         ),
-        // "Text Sm" - bodyMedium
-        body2 = TextStyle(
+        // "Text Sm"
+        bodyMedium = TextStyle(
                 fontFamily = if (activatePreview) FontFamily.Default else rubikFontFamily,
                 fontWeight = FontWeight.Normal,
                 fontSize = 14.sp
         ),
-        // "Text Xs" - bodySmall
-        overline = TextStyle(
+        // "Text Xs"
+        bodySmall = TextStyle(
                 fontFamily = if (activatePreview) FontFamily.Default else rubikFontFamily,
                 fontWeight = FontWeight.Normal,
                 fontSize = 12.sp
         ),
-        // "Action" - labelLarge
-        subtitle1 = TextStyle(
+        // "Action"
+        labelLarge = TextStyle(
                 fontFamily = if (activatePreview) FontFamily.Default else rubikFontFamily,
                 fontWeight = FontWeight.SemiBold,
                 fontSize = 16.sp
         ),
-        // "Subtitle" - labelMedium
-        subtitle2 = TextStyle(
+        // "Subtitle"
+        labelMedium = TextStyle(
                 fontFamily = if (activatePreview) FontFamily.Default else rubikFontFamily,
                 fontWeight = FontWeight.Medium,
                 fontSize = 14.sp
