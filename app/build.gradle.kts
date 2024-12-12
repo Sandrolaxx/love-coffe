@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.aktie.lovecoffe"
+    namespace = "com.aktie.lovecoffee"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.aktie.lovecoffe"
+        applicationId = "com.aktie.lovecoffee"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

@@ -1,4 +1,4 @@
-package com.aktie.lovecoffe
+package com.aktie.lovecoffee
 
 import org.junit.Test
 

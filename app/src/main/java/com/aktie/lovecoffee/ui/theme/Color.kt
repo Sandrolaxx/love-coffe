@@ -1,4 +1,4 @@
-package com.aktie.lovecoffe.ui.theme
+package com.aktie.lovecoffee.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

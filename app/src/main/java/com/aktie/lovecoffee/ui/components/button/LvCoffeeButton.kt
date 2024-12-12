@@ -1,4 +1,4 @@
-package com.aktie.lovecoffe.ui.components
+package com.aktie.lovecoffee.ui.components
 
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.layout.*
@@ -13,13 +13,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.aktie.lovecoffe.R
-import com.aktie.lovecoffe.ui.theme.Gray100
-import com.aktie.lovecoffe.ui.theme.GreenBase
-import com.aktie.lovecoffe.ui.theme.Typography
+import com.aktie.lovecoffee.R
+import com.aktie.lovecoffee.ui.theme.Gray100
+import com.aktie.lovecoffee.ui.theme.GreenBase
+import com.aktie.lovecoffee.ui.theme.Typography
 
 @Composable
-fun LvCoffeButton(
+fun LvCoffeeButton(
     modifier: Modifier = Modifier,
     text: String? = null,
     @DrawableRes iconRes: Int? = null,
@@ -53,8 +53,8 @@ fun LvCoffeButton(
 
 @Preview
 @Composable
-private fun LvCoffeButtonPreview() {
-    LvCoffeButton(
+private fun LvCoffeeButtonPreview() {
+    LvCoffeeButton(
         modifier = Modifier.fillMaxWidth(),
         text = "Confirmar",
         iconRes = R.drawable.ic_scan
@@ -63,8 +63,8 @@ private fun LvCoffeButtonPreview() {
 
 @Preview
 @Composable
-private fun LvCoffeButtonNoIconPreview() {
-    LvCoffeButton(
+private fun LvCoffeeButtonNoIconPreview() {
+    LvCoffeeButton(
         modifier = Modifier.fillMaxWidth(),
         text = "Confirmar"
     ) {}
@@ -72,8 +72,8 @@ private fun LvCoffeButtonNoIconPreview() {
 
 @Preview
 @Composable
-private fun LvCoffeButtonNoTextPreview() {
-    LvCoffeButton(
+private fun LvCoffeeButtonNoTextPreview() {
+    LvCoffeeButton(
         modifier = Modifier,
         iconRes = R.drawable.ic_arrow_left
     ) {}

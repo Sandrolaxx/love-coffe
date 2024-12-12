@@ -1,9 +1,9 @@
-package com.aktie.lovecoffe.data.model
+package com.aktie.lovecoffee.data.model
 
 import androidx.annotation.DrawableRes
-import com.aktie.lovecoffe.R
+import com.aktie.lovecoffee.R
 
-enum class LvCoffeCategoryFilterChipEnum(
+enum class CategoryFilterChipEnum(
     val description: String,
     @DrawableRes val icon: Int
 ) {
@@ -17,7 +17,7 @@ enum class LvCoffeCategoryFilterChipEnum(
     PADARIA(description = "Padaria", icon = R.drawable.ic_bakery);
 
     companion object {
-        fun fromDescription(description: String): LvCoffeCategoryFilterChipEnum? {
+        fun fromDescription(description: String): CategoryFilterChipEnum? {
             return entries.find { it.description == description }
         }
     }

@@ -1,4 +1,4 @@
-package com.aktie.lovecoffe
+package com.aktie.lovecoffee
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

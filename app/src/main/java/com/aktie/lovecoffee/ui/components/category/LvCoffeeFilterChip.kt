@@ -1,4 +1,4 @@
-package com.aktie.lovecoffe.ui.components.category
+package com.aktie.lovecoffee.ui.components.category
 
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
@@ -13,17 +13,18 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.aktie.lovecoffe.data.model.LvCoffeCategory
-import com.aktie.lovecoffe.ui.theme.Gray300
-import com.aktie.lovecoffe.ui.theme.Gray400
-import com.aktie.lovecoffe.ui.theme.Typography
+import com.aktie.lovecoffee.data.model.Category
+import com.aktie.lovecoffee.ui.theme.Gray300
+import com.aktie.lovecoffee.ui.theme.Gray400
+import com.aktie.lovecoffee.ui.theme.GreenBase
+import com.aktie.lovecoffee.ui.theme.Typography
 
 @Composable
-fun LvCoffeCategoryFilterChip(
+fun LvCoffeeCategoryFilterChip(
     modifier: Modifier = Modifier,
     isSelected: Boolean,
     onClick: (isSelected: Boolean) -> Unit,
-    category: LvCoffeCategory
+    category: Category
 ) {
     FilterChip(
         modifier = modifier
@@ -50,8 +51,12 @@ fun LvCoffeCategoryFilterChip(
             selectedBorderWidth = 0.dp,
             selectedBorderColor = Color.Transparent
         ),
+        colors = FilterChipDefaults.filterChipColors(
+            containerColor = Color.White,
+            selectedContainerColor = GreenBase
+        ),
         selected = isSelected,
-        onClick = { onClick(isSelected) },
+        onClick = { onClick(!isSelected) },
         label = {
             Text(
                 text = category.name,
@@ -64,13 +69,26 @@ fun LvCoffeCategoryFilterChip(
 
 @Preview
 @Composable
-private fun NearbyCategoryPreview() {
-    LvCoffeCategoryFilterChip(
-        category = LvCoffeCategory(
+private fun NearbyCategoryFilterChipSelectedPreview() {
+    LvCoffeeCategoryFilterChip(
+        category = Category(
             id = "1",
             name = "Alimentação"
         ),
         isSelected = true,
+        onClick = {}
+    )
+}
+
+@Preview
+@Composable
+private fun NearbyCategoryFilterChipNotSelectedPreview() {
+    LvCoffeeCategoryFilterChip(
+        category = Category(
+            id = "1",
+            name = "Cinema"
+        ),
+        isSelected = false,
         onClick = {}
     )
 }

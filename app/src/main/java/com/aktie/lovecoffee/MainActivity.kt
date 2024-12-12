@@ -1,4 +1,4 @@
-package com.aktie.lovecoffe
+package com.aktie.lovecoffee
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,7 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.aktie.lovecoffe.ui.theme.LoveCoffeTheme
+import com.aktie.lovecoffee.ui.theme.LoveCoffeTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
